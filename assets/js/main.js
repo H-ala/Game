@@ -102,7 +102,7 @@ particlesJS.load('particles-js', 'assets/vendor/particles.js/particlesjs-config(
 
             }
             if (turn === 'X') {
-                this.style.color = 'red';
+                this.style.color = 'mediumvioletred';
             }
             if (turn === 'O') {
                 this.style.color = 'cornflowerblue';
