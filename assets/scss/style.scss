@@ -1,0 +1,121 @@
+body {
+  font-family: Broadway, serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: white;
+  background: #2b2b2c;
+
+  h1 {
+    text-align: center;
+    margin: 50px;
+  }
+
+  #particles-js{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  #road {
+    position: relative;
+    height: 12vh;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    #cat, #dog {
+      position: absolute;
+      font-size: 3em;
+      margin: 5px;
+    }
+
+    #cat {
+      color: #d9af46;
+    }
+
+    #dog {
+      color: #564a4a;
+      right: 0;
+      transform: rotateY(180deg);
+    }
+  }
+
+  #dose {
+    #XO {
+      width: 50%;
+      height: 50vh;
+      border-spacing: 0;
+      user-select: none;
+      margin: 20px auto;
+
+      td {
+        border: 1px solid white;
+        padding: 1em;
+        text-align: center;
+        width: 33%;
+        height: 33%;
+        font-size: 30px;
+
+        &:first-child {
+          border-left: 0;
+        }
+
+        &:last-child {
+          border-right: 0;
+        }
+      }
+
+      tr {
+        &:first-child {
+          td {
+            border-top: 0;
+          }
+        }
+
+        &:last-child {
+          td {
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+    #winner, #turn, #again {
+      margin-left: 5px;
+
+      span{
+        color: mediumpurple;
+      }
+    }
+  }
+
+  #colorful {
+    #square1 {
+      height: 200px;
+      width: 200px;
+      background: #d9af46;
+      margin: 50px auto;
+      border-radius: 5px;
+    }
+  }
+
+  #Moving {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+    #square2 {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      background: #757272;
+      border-radius: 5px;
+      left: 0;
+      top: 10%;
+    }
+  }
+}
