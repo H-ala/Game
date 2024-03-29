@@ -19,14 +19,14 @@ body {
     z-index: -1; }
   body #road {
     position: relative;
-    height: 12vh;
+    height: 13vh;
     background: #eee;
     display: flex;
     align-items: center;
     overflow: hidden; }
     body #road #cat, body #road #dog {
       position: absolute;
-      font-size: 3em;
+      font-size: 45px;
       margin: 5px; }
     body #road #cat {
       color: #d9af46; }
